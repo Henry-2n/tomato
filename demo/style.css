@@ -1,0 +1,207 @@
+/* 全局样式重置与基础设置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑", sans-serif;
+}
+
+body {
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+/* 顶部导航 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status {
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* 主体容器布局 */
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-section {
+  width: 60%;
+}
+
+.right-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 视频区域样式 */
+.video-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.video-info {
+  color: #666;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.video-meta {
+  color: #999;
+  font-size: 14px;
+}
+
+/* 右侧顶部信息 */
+.top-info {
+  background-color: #fff;
+  padding: 12px 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  color: #555;
+}
+
+/* 卡片布局（基本情况） */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  flex: 1 1 calc(50% - 15px);
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 图表区域（模拟） */
+.chart-box {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.chart-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bar {
+  background-color: #409eff;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* 异常监测 */
+.monitor-box {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.box-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.monitor-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.monitor-item img {
+  border-radius: 4px;
+}
+
+/* 巡园记录表格 */
+.record-box {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.record-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.record-table th,
+.record-table td {
+  border: 1px solid #eee;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.record-table th {
+  background-color: #f8f9fa;
+  font-weight: 500;
+}
+
+/* 响应式适配（简单示例，可按需扩展） */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+}
+
